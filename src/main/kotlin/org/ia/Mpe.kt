@@ -16,9 +16,9 @@ import aima.core.probability.bayes.Node
 // calcolo P(X,e) e la salvo come massimo, P sarà la moltiplicazione  tra le P condizionate di tutte le variabili nascoste
 // compresa la variabile casuale E
 
-fun mpe(bn : BayesianNetwork, E : Node ){
+fun mpe(network: BayesianNetwork, E : Node ){
 
-    val valorirestituitidallafunzione = bn.variablesInTopologicalOrder.map { nodo ->
+    val valorirestituitidallafunzione = network.variablesInTopologicalOrder.map { nodo ->
 
     }
 

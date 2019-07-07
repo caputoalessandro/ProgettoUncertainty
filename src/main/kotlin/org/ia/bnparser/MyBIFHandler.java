@@ -48,7 +48,7 @@ import aima.core.probability.util.RandVar;
 /**
  * Handler, used to parse the XML BIF files.
  */
-public class MyBIFHandler extends DefaultHandler {
+class MyBIFHandler extends DefaultHandler {
 	/**
 	 * The current section.
 	 */
