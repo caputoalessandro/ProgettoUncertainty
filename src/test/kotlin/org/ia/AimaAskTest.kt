@@ -11,7 +11,10 @@ class AimaAskTest {
     fun testInferenceByEnumeration() {
         val network = BIFReader.loadFromResource("networks/earthquake.xbif")
 
-        val ask = EnumerationAsk()
+
+//        val result = EnumerationAsk().ask(
+//            arrayOf()
+//        )
 
 
 
