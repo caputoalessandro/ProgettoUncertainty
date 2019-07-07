@@ -13,6 +13,7 @@ class AimaAskTest {
 
         val ask = EnumerationAsk()
 
+
     }
 
 }
