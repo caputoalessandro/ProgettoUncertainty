@@ -1,7 +1,9 @@
 package org.ia
 
+import aima.core.probability.RandomVariable
 import aima.core.probability.bayes.BayesianNetwork
 import aima.core.probability.bayes.Node
+import aima.core.probability.example.BayesNetExampleFactory
 
 //P(X,e) probabilità condizionata
 //X è l'evento (nodo) che sto analizzando
@@ -16,11 +18,17 @@ import aima.core.probability.bayes.Node
 // calcolo P(X,e) e la salvo come massimo, P sarà la moltiplicazione  tra le P condizionate di tutte le variabili nascoste
 // compresa la variabile casuale E
 
-fun mpe(network: BayesianNetwork, E : Node ){
+fun main( args : Array<String>){
 
-    val valorirestituitidallafunzione = network.variablesInTopologicalOrder.map { nodo ->
+    var bn = BayesNetExampleFactory.constructCloudySprinklerRainWetGrassNetwork()
+
+    var lista = bn.variablesInTopologicalOrder
+
+    val variabile = lista.get(1)
+
+    val nodo = bn.getNode(variabile)
+
+    println("lista: $nodo ")
 
     }
 
-
-}
